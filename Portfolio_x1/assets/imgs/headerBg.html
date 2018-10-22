@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/*    border: .5px solid grey;*/
+}
+html {
+    font-size: 62.5%;
+}
+
+.bg_container {
+    background-color: black;
+    width: 100%;
+    height: 80rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bg_container .box {
+    width: 8rem; height: 8rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -1rem;
+}
+.bg_container .box .hexagon {
+    background-color: #18191b;
+    width: 100%; height: 85%;
+    clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+    margin: 0px 1.2px;
+    transition: .5s all;
+}
+.bg_container .box .hexagon:hover {
+    width: 100%; height: 80%;
+}
+        
+
+.bg_container .col:nth-child(odd) {
+    margin-top: -3.5rem;
+}
+.bg_container .box:nth-child(odd):hover {
+    animation: codd 5s ease-in-out 1;
+/*    box-shadow: 1000px 0px 500px 100px #ff0000 ;*/
+}
+.bg_container .box:nth-child(even):hover {
+    animation: ceven 5s ease-in-out 1;
+}
+
+/*--------------Odd*/
+@keyframes codd {
+    
+    0%{
+        box-shadow: 0px 0px 300px 5px #ff0000;
+        box-shadow: -1000px 0px 500px 100px #0199da ;
+    }
+    10%{
+        box-shadow: -110px 0px 50px 1px #0199da ;
+    }
+    60%{
+        box-shadow: 0px 0px 0px 0px #ff64ee  ;
+        background-color: #88006e  ;
+    }
+    90%{
+        box-shadow: 500px 0px 200px 30px #ff0000;
+    }
+    100%{
+        box-shadow: 600px 0px 200px 0px #ff0000;
+    }
+}
+/*---------------Even*/
+@keyframes ceven {
+    
+    0%{
+        box-shadow: 0px 0px 300px 0px #ff0000 ;
+        box-shadow: 1000px 0px 100px 0px #0199da ;
+    }
+    10%{
+        box-shadow: 110px 0px 50px 1px #0199da ;
+    }
+    60%{
+        box-shadow: 0px 0px 0px 0px #ff64ee ;
+        background-color: #88006e ;
+    }
+    90%{
+        box-shadow: -500px 0px 200px 30px #ff0000;
+    }
+
+    100%{
+        box-shadow: -600px 0px 200px 0px #ff0000;
+    }
+}
+    </style>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--    --------------------Hexagon-->
+    <div class="bg_container">
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>        
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>        
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>       
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>        
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>        
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>        
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>        
+    </div>
+       
+</body>
+</html>

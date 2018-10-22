@@ -1,0 +1,36 @@
+:root {
+    --mainBg: #0B172A;
+    --mainBgDark: #0e1a29;
+    --mainBgLight: #0e1a29;
+    --mainBgHover: #243d5a;
+
+    --mainTxt: #adb7c3;
+    --mainTxtDark: #fff;
+    --mainTxtlight: #fff;
+    --mainTxtHover: #e2f65e;
+
+    --darkPink: #cb2b44;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: .5px solid grey;
+}
+
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--mainBg);
+    color: var(--mainTxt);
+}
+
+.main_container {
+    max-width: 1366px;
+    margin: 0 auto;
+}
