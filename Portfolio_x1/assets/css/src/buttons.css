@@ -1,29 +1,26 @@
 /* --------------------------------Menu Button-- */
 .btn_menu {
-    min-width: 5rem;
-    min-height: 5rem;
-    padding: 0;
-    margin: 0;
-    line-height: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    border: 1.5px inset white;
-    border-radius: 100%;
-    cursor: pointer;
-    user-select: none;
-    position: absolute;
-    top: 4%;
-    right: 3%;
-    z-index: 1000;
-    
+  min-width: 5rem;
+  min-height: 5rem;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  border: 1.5px inset var(--darkPink);
+  border-radius: 100%;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  top: 4%;
+  right: 3%;
+  z-index: 1000;
 }
-.btn_menu .menu_bars {
-    
-}
+
 .btn_menu .menu_close {
-    display: none;
+  display: none;
 }
 
 /* --------------------------------Menu Button-- */

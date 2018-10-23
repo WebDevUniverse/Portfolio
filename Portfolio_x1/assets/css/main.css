@@ -1,4 +1,4 @@
-@import "src/base.css";
-@import "src/header.css";
-@import "src/buttons.css";
-@import "src/logo.css";
+@import url(src/base.css);
+@import url(src/header.css);
+@import url(src/buttons.css);
+@import url(src/logo.css);
