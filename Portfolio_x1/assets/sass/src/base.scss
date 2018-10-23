@@ -1,3 +1,6 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+
 :root {
     --mainBg: #0B172A;
     --mainBgDark: #0e1a29;
@@ -33,5 +36,7 @@ body {
 
 .main_container {
     max-width: 1366px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
+
+

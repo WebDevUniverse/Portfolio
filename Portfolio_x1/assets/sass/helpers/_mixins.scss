@@ -1,0 +1,28 @@
+@mixin size ($w: auto, $h: auto) {
+	width: $w;
+	height: $h;
+}
+
+
+@mixin color ($t:auto, $bg:auto) {
+	color: $t;
+	background-color: $bg;
+}
+
+@mixin round ($value) {
+    border-radius: $value;
+    -ms-border-radius: $value;
+    -moz-border-radius: $value;
+    -webkit-border-radius: $value;
+}
+
+@mixin flex ($ff: row wrap,$js:flex-start,$ai:baseline) {
+    display: flex;
+    flex-flow: $ff;
+    justify-content: $js;
+    align-items: $ai;
+}
+
+@mixin max-width ($mw) {
+    @media (max-width: $mw+px ) {@content;}
+}

@@ -1,3 +1,6 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+
 .main_header {
     position: relative;
     overflow: hidden;
@@ -22,4 +25,7 @@
 .main_header .top_navbar {
     width: 70%; height: 6rem;
     margin: 0 auto;
+    @include max-width (777){
+        margin: 3px;
+    }
 }

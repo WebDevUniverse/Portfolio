@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "../sass/main.css",
+	"sources": [
+		"../sass/main.scss",
+		"../sass/helpers/_variables.scss",
+		"../sass/helpers/_mixins.scss"
+	],
+	"sourcesContent": [
+		"@import \"helpers/variables\";\r\n@import \"helpers/mixins\";\r\n\r\n\r\n@import \"src/base.css\";\r\n@import \"src/header.css\";\r\n@import \"src/buttons.css\";\r\n@import \"src/logo.css\";\r\n",
+		"",
+		"@mixin size ($w: auto, $h: auto) {\r\n\twidth: $w;\r\n\theight: $h;\r\n}\r\n\r\n\r\n@mixin color ($t:auto, $bg:auto) {\r\n\tcolor: $t;\r\n\tbackground-color: $bg;\r\n}\r\n\r\n@mixin round ($value) {\r\n    border-radius: $value;\r\n    -ms-border-radius: $value;\r\n    -moz-border-radius: $value;\r\n    -webkit-border-radius: $value;\r\n}\r\n\r\n@mixin flex ($ff: row wrap,$js:flex-start,$ai:baseline) {\r\n    display: flex;\r\n    flex-flow: $ff;\r\n    justify-content: $js;\r\n    align-items: $ai;\r\n}\r\n\r\n@mixin  screen ($max-width) {\r\n    @media (max-width: #{$max-width}) {\r\n        @content;\r\n      }\r\n}"
+	],
+	"mappings": "AAIA,OAAO,CAAP,iBAAO;AACP,OAAO,CAAP,mBAAO;AACP,OAAO,CAAP,oBAAO;AACP,OAAO,CAAP,iBAAO",
+	"names": []
+}

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../../sass/src/buttons.css",
+	"sources": [
+		"../../sass/src/buttons.scss"
+	],
+	"sourcesContent": [
+		"/* --------------------------------Menu Button-- */\r\n.btn_menu {\r\n    min-width: 5rem;\r\n    min-height: 5rem;\r\n    padding: 0;\r\n    margin: 0;\r\n    line-height: 0;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    font-size: 3rem;\r\n    border: 1.5px inset var(--darkPink);\r\n    border-radius: 100%;\r\n    cursor: pointer;\r\n    user-select: none;\r\n    position: absolute;\r\n    top: 4%;\r\n    right: 3%;\r\n    z-index: 1000;\r\n    \r\n}\r\n.btn_menu .menu_bars {\r\n    \r\n}\r\n.btn_menu .menu_close {\r\n    display: none;\r\n}\r\n\r\n/* --------------------------------Menu Button-- */"
+	],
+	"mappings": "AAAA,mDAAmD;;AACnD,AAAA,SAAS,CAAC;EACN,SAAS,EAAE,IAAK;EAChB,UAAU,EAAE,IAAK;EACjB,OAAO,EAAE,CAAE;EACX,MAAM,EAAE,CAAE;EACV,WAAW,EAAE,CAAE;EACf,OAAO,EAAE,IAAK;EACd,eAAe,EAAE,MAAO;EACxB,WAAW,EAAE,MAAO;EACpB,SAAS,EAAE,IAAK;EAChB,MAAM,EAAE,KAAK,CAAC,KAAK,CAAC,eAAG;EACvB,aAAa,EAAE,IAAK;EACpB,MAAM,EAAE,OAAQ;EAChB,WAAW,EAAE,IAAK;EAClB,QAAQ,EAAE,QAAS;EACnB,GAAG,EAAE,EAAG;EACR,KAAK,EAAE,EAAG;EACV,OAAO,EAAE,IAAK;CAEjB;;;AAID,AAAU,SAAD,CAAC,WAAW,CAAC;EAClB,OAAO,EAAE,IAAK;CACjB;;AAED,mDAAmD",
+	"names": []
+}

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../../sass/src/header.css",
+	"sources": [
+		"../../sass/src/header.scss"
+	],
+	"sourcesContent": [
+		".main_header {\r\n    position: relative;\r\n    overflow: hidden;\r\n    overflow: -moz-scrollbars-none;\r\n    -ms-overflow-style: none;    \r\n    width: 100%; height: 60rem;\r\n    z-index: 1;\r\n}\r\n.main_header iframe::-webkit-scrollbar {\r\n    display: none;\r\n    width: 0px;\r\n    background: transparent;\r\n}\r\n\r\n.main_header iframe {\r\n    width: 100%; height: 100%;\r\n    position: absolute;\r\n    z-index: -10000;\r\n    border-bottom: 1px ridge #424242;\r\n}\r\n\r\n.main_header .top_navbar {\r\n    width: 70%; height: 6rem;\r\n    margin: 0 auto;\r\n}\r\n"
+	],
+	"mappings": ";AAAA,AAAA,YAAY,CAAC;EACT,QAAQ,EAAE,QAAS;EACnB,QAAQ,EAAE,MAAO;EACjB,QAAQ,EAAE,oBAAqB;EAC/B,kBAAkB,EAAE,IAAK;EACzB,KAAK,EAAE,IAAK;EAAE,MAAM,EAAE,KAAM;EAC5B,OAAO,EAAE,CAAE;CACd;;;AACD,AAAmB,YAAP,CAAC,MAAM,AAAA,mBAAmB,CAAC;EACnC,OAAO,EAAE,IAAK;EACd,KAAK,EAAE,GAAI;EACX,UAAU,EAAE,WAAY;CAC3B;;;AAED,AAAa,YAAD,CAAC,MAAM,CAAC;EAChB,KAAK,EAAE,IAAK;EAAE,MAAM,EAAE,IAAK;EAC3B,QAAQ,EAAE,QAAS;EACnB,OAAO,EAAE,MAAO;EAChB,aAAa,EAAE,iBAAkB;CACpC;;;AAED,AAAa,YAAD,CAAC,WAAW,CAAC;EACrB,KAAK,EAAE,GAAI;EAAE,MAAM,EAAE,IAAK;EAC1B,MAAM,EAAE,MAAO;CAClB",
+	"names": []
+}
