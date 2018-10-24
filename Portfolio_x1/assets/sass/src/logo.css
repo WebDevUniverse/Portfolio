@@ -1,0 +1,15 @@
+.logo {
+  width: 12rem;
+  position: absolute;
+  top: 10rem;
+  left: 1rem;
+  border-radius: 100%;
+  -ms-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+
+.logo img {
+  max-width: 100%;
+}
+/*# sourceMappingURL=logo.css.map */
