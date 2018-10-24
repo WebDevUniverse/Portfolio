@@ -24,5 +24,91 @@
 }
 
 @mixin max-width ($mw) {
-    @media (max-width: $mw+px ) {@content;}
+    @media (max-width: $mw) {@content;}
 }
+
+@mixin center($position) {
+    position: absolute;
+    
+    @if $position == 'vertical' {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    @else if $position == 'horizontal' {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translate(-50%);
+    }
+    @else if $position == 'both' {
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+
+
+
+
+
+
+
+
+//Animation mixin setup
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }  
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+
+//Usage
+// Define animation name, and properties
+// @include keyframes(fade-out) {
+//     0% { opacity: 1; }
+//     90% { opacity: 0; }
+//   }
+//   // Add animation to element
+//   .element {
+//     width: 100px;
+//     height: 100px;
+//     background: black;
+//     @include animation('fade-out 5s 3');
+//   }
+
+
+//Cross browser opacity
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+  }
+//   .faded-text {
+//     @include opacity(0.8);
+//   }
+
+
+
