@@ -3,30 +3,64 @@
 
 /* --------------------------------Menu Button-- */
 .btn_menu {
-    min-width: 5rem;
-    min-height: 5rem;
-    padding: 0;
-    margin: 0;
-    line-height: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    border: 1.5px inset var(--darkPink);
-    border-radius: 100%;
+    @include size (3.5rem, 3rem);
+    @include flex (column nowrap, space-evenly , center);
+    position: relative; 
     cursor: pointer;
-    user-select: none;
     position: absolute;
-    top: 4%;
     right: 3%;
-    z-index: 1000;
-    
+    top: 3%;
+
+    .bars {
+        @include size(95%,calc(100%/8));
+        transition: 50ms ease-in-out;
+
 }
-.btn_menu .menu_bars {
-    
+    .barss {
+        @include size(95%,calc(100%/8));
+        transition: 50ms ease-in-out;
+    }
 }
-.btn_menu .menu_close {
-    display: none;
+
+.btn_menu .bars:nth-child(1){
+    background-color: white;
 }
+.btn_menu .bars:nth-child(2){
+    background-color: #cecece;
+}
+.btn_menu .bars:nth-child(3){
+    background-color: #cecece;
+}
+.btn_menu .bars:nth-child(4){
+    background-color: white;
+}
+
+.btn_menu .barss:nth-child(1){
+    background-color: white;
+    transform: rotateZ(40deg);
+
+    position: absolute;
+    top: 50%;
+}
+.btn_menu .barss:nth-child(2){
+    background-color: #cecece;
+    transform: rotateZ(40deg);
+
+    position: absolute;
+}
+.btn_menu .barss:nth-child(3){
+    background-color: #cecece;
+    transform: rotateZ(-40deg);
+
+    position: absolute;
+}
+.btn_menu .barss:nth-child(4){
+    background-color: white;
+    transform: rotateZ(-40deg);
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+}
+
 
 /* --------------------------------Menu Button-- */

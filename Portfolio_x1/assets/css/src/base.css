@@ -1,27 +1,17 @@
-:root {
-  --mainBg: #0B172A;
-  --mainBgDark: #0e1a29;
-  --mainBgLight: #0e1a29;
-  --mainBgHover: #243d5a;
-  --mainTxt: #adb7c3;
-  --mainTxtDark: #fff;
-  --mainTxtlight: #fff;
-  --mainTxtHover: #e2f65e;
-  --darkPink: #cb2b44;
-}
-
+/* line 5, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/base.scss */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: .5px solid grey; */
 }
 
+/* line 12, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/base.scss */
 html {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 62.5%;
 }
 
+/* line 17, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/base.scss */
 body {
   font-size: 1.6rem;
   background-color: var(--mainBg);
@@ -29,8 +19,11 @@ body {
   background-image: url(../../imgs/bg_texture.png);
 }
 
+/* line 24, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/base.scss */
 .main_container {
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
 }
+
+/*# sourceMappingURL=../../css/src/base.map */

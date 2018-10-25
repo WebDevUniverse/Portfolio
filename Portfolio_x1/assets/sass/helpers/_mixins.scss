@@ -4,9 +4,9 @@
 }
 
 
-@mixin color ($t:auto, $bg:auto) {
-	color: $t;
-	background-color: $bg;
+@mixin color ($bg:auto, $t:auto) {
+    background-color: $bg;
+    color: $t;
 }
 
 @mixin round ($value) {

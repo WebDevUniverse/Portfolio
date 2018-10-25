@@ -1,19 +1,22 @@
+/* line 4, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/header.scss */
 .main_header {
   position: relative;
   overflow: hidden;
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
   width: 100%;
-  height: 60rem;
+  height: 69rem;
   z-index: 1;
 }
 
+/* line 12, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/header.scss */
 .main_header iframe::-webkit-scrollbar {
   display: none;
   width: 0px;
   background: transparent;
 }
 
+/* line 18, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/header.scss */
 .main_header iframe {
   width: 100%;
   height: 100%;
@@ -22,8 +25,11 @@
   border-bottom: 1px ridge #424242;
 }
 
+/* line 25, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/header.scss */
 .main_header .top_navbar {
   width: 70%;
   height: 6rem;
   margin: 0 auto;
 }
+
+/*# sourceMappingURL=../../css/src/header.map */
