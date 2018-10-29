@@ -2,6 +2,20 @@
 	width: $w;
 	height: $h;
 }
+@mixin size-max ($w: auto, $h: auto) {
+	max-width: $w;
+	max-height: $h;
+}
+@mixin size-min ($w: auto, $h: auto) {
+	min-width: $w;
+	min-height: $h;
+}
+
+@mixin box-shadow ($bs) {
+    -webkit-box-shadow:$bs;
+    -moz-box-shadow:$bs ;
+    box-shadow:$bs;
+}
 
 
 @mixin color ($bg:auto, $t:auto) {
@@ -53,7 +67,11 @@
 
 
 
-
+@mixin transform ($value) {
+    -webkit-transform: $value; /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: $value; /* IE 9 */
+          transform: $value;
+}
 
 
 

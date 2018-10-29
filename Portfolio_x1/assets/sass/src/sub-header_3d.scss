@@ -1,0 +1,60 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+
+.sub-header_3d {
+    @include size (100%, 10rem);
+    margin: 0 auto;
+    // perspective: 80rem;
+
+    .box {
+        width: 90%;
+        transform-style: preserve-3d;
+        font: 2rem impact;
+        background-color: grey;
+        text-align: center;
+        @include animation (ro4tate_cube 15s linear);
+
+        @include keyframes (rotate_cube){
+            0% {@include transform (rotateY(0deg))}
+            100% {@include transform (rotateY(360deg))}
+        }
+    
+        .front {
+            // @include transform (translateZ(0rem));
+            background-color: #1f122c;
+        }
+        .back {
+            // @include transform (rotateY(180deg) translateZ(0rem));
+            background-color: #1f122c;
+        }
+        .left {
+            // @include transform (rotateY(-90deg) translateX(-0rem));
+            background-color: #1f122c;
+            // transform-origin: left;
+        }
+        .right {
+            // @include transform (rotateY(90deg) translateX(0rem));
+            background-color: #1f122c;
+            // transform-origin: right;
+        }
+        .top {
+            // @include transform (rotateX(-90deg) translateY(-0rem));
+            background-color: #1f122c;
+            // transform-origin: top;
+        }
+        .bottom {
+            // @include transform (rotateX(90deg) translateY(0rem));
+            background-color: #1f122c;
+            // transform-origin: bottom;
+        }
+    }
+
+    .box div {
+        position: absolute;
+        @include size (90%, 9rem);
+        @include opacity (.9);
+        color: white;
+    }
+
+
+}

@@ -1,0 +1,29 @@
+/* line 5, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/hero.scss */
+.hero {
+  color: #adb7c3;
+  position: relative;
+  overflow: hidden;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  width: 100%;
+  height: 50rem;
+}
+
+/* line 15, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/hero.scss */
+.hero iframe::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+  background: transparent;
+}
+
+/* line 21, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/hero.scss */
+.hero iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px ridge #424242;
+}
+
+/*# sourceMappingURL=../../css/src/hero.map */

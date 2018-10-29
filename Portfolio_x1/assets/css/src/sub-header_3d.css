@@ -1,0 +1,149 @@
+/* line 4, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/sub-header_3d.scss */
+.sub-header_3d {
+  width: 100%;
+  height: 10rem;
+  margin: 0 auto;
+}
+
+/* line 9, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/sub-header_3d.scss */
+.sub-header_3d .box {
+  width: 90%;
+  transform-style: preserve-3d;
+  font: 2rem impact;
+  background-color: grey;
+  text-align: center;
+  -webkit-animation: ro4tate_cube 15s linear;
+  -moz-animation: ro4tate_cube 15s linear;
+  -ms-animation: ro4tate_cube 15s linear;
+  -o-animation: ro4tate_cube 15s linear;
+  animation: ro4tate_cube 15s linear;
+}
+
+@-webkit-keyframes rotate_cube {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotateY(0deg);
+    /* IE 9 */
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotateY(360deg);
+    /* IE 9 */
+    transform: rotateY(360deg);
+  }
+}
+
+@-moz-keyframes rotate_cube {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotateY(0deg);
+    /* IE 9 */
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotateY(360deg);
+    /* IE 9 */
+    transform: rotateY(360deg);
+  }
+}
+
+@-ms-keyframes rotate_cube {
+  /* line 18, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/sub-header_3d.scss */
+  .sub-header_3d .box 0% {
+    -webkit-transform: rotateY(0deg);
+    /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotateY(0deg);
+    /* IE 9 */
+    transform: rotateY(0deg);
+  }
+  /* line 19, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/sub-header_3d.scss */
+  .sub-header_3d .box 100% {
+    -webkit-transform: rotateY(360deg);
+    /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotateY(360deg);
+    /* IE 9 */
+    transform: rotateY(360deg);
+  }
+}
+
+@-o-keyframes rotate_cube {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotateY(0deg);
+    /* IE 9 */
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotateY(360deg);
+    /* IE 9 */
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotate_cube {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotateY(0deg);
+    /* IE 9 */
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotateY(360deg);
+    /* IE 9 */
+    transform: rotateY(360deg);
+  }
+}
+
+/* line 22, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/sub-header_3d.scss */
+.sub-header_3d .box .front {
+  background-color: #1f122c;
+}
+
+/* line 26, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/sub-header_3d.scss */
+.sub-header_3d .box .back {
+  background-color: #1f122c;
+}
+
+/* line 30, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/sub-header_3d.scss */
+.sub-header_3d .box .left {
+  background-color: #1f122c;
+}
+
+/* line 35, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/sub-header_3d.scss */
+.sub-header_3d .box .right {
+  background-color: #1f122c;
+}
+
+/* line 40, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/sub-header_3d.scss */
+.sub-header_3d .box .top {
+  background-color: #1f122c;
+}
+
+/* line 45, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/sub-header_3d.scss */
+.sub-header_3d .box .bottom {
+  background-color: #1f122c;
+}
+
+/* line 52, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/sub-header_3d.scss */
+.sub-header_3d .box div {
+  position: absolute;
+  width: 90%;
+  height: 9rem;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  color: white;
+}
+
+/*# sourceMappingURL=../../css/src/sub-header_3d.map */

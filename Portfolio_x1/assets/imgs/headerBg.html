@@ -17,7 +17,6 @@
 html {
     font-size: 62.5%;
 }
-
 .bg_container {
     background-color: black;
     width: 100%;
@@ -34,7 +33,7 @@ html {
 }
 
 .bg_container .box {
-    width: 8rem; height: 7.5rem;
+    width: 7.5rem; height: 7rem;
     border-radius: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -49,25 +48,21 @@ html {
 }
 .bg_container .box .hexagon {
     background-color: #18191b;
-    width: 100%; height: 83.5%;
+    width: 100%; height: 83.3%;
     -webkit-clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
-            clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
-    margin: 1px 1.5px;
+    clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+    margin:2px;
     
     transition: .4s ease-in-out 2s;
 }
 
-.bg_container .hexagon:nth-child(odd):hover {
-    transform: rotatez(180deg);
-    /* width: 92%; height: 80.5%; */
-}
-.bg_container .hexagon:nth-child(even):hover {
+.bg_container .box .hexagon:hover{
     transform: rotatez(-180deg);
 }
         
 
 .bg_container .col:nth-child(odd) {
-    margin-top: -3.25rem;
+    margin-top: -3rem;
 }
 .bg_container .box:nth-child(odd):hover {
     -webkit-animation: codd 2s ease-in-out 1s 1 ;
@@ -90,7 +85,7 @@ html {
         box-shadow: -110px 0px 50px 1px #0199da ;
     }
     60%{
-        box-shadow: 0px 0px 0px 0px #ff64ee  ;
+        box-shadow: 0px 0px 2px 2px #ff64ee  ;
         background-color: #88006e  ;
     }
     90%{
@@ -100,26 +95,7 @@ html {
        
     }
 }
-@keyframes codd {
-    
-    0%{
-        box-shadow: 0px 0px 300px 5px #ff0000;
-        box-shadow: -1000px 0px 500px 100px #0199da ;
-    }
-    10%{
-        box-shadow: -110px 0px 50px 1px #0199da ;
-    }
-    60%{
-        box-shadow: 0px 0px 0px 0px #ff64ee  ;
-        background-color: #88006e  ;
-    }
-    80%{
-        box-shadow: 500px 0px 200px 30px #ff0000;
-    }
-    100%{
-        box-shadow: 600px 0px 200px 0px #ff0000;
-    }
-}
+
 /*---------------Even*/
 @-webkit-keyframes ceven {
     
@@ -131,7 +107,7 @@ html {
         box-shadow: 110px 0px 50px 1px #0199da ;
     }
     60%{
-        box-shadow: 0px 0px 0px 0px #ff64ee ;
+        box-shadow: 0px 0px 2px 2px #ff64ee ;
         background-color: #88006e ;
     }
     80%{
@@ -141,6 +117,118 @@ html {
     100%{
         box-shadow: -600px 0px 200px 0px #ff0000;
     }
+}
+
+@media (max-width: 1024px){
+.bg_container {
+    background-color: black;
+    width: 100%;
+    height: 80rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row;
+        flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+}
+
+.bg_container .box {
+    width: 6.5rem; height: 6rem;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: -1rem;
+}
+.bg_container .box .hexagon {
+    background-color: #18191b;
+    width: 100%; height: 80.7%;
+    -webkit-clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+            clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+    margin: 0px 3.5px;
+    
+    transition: .4s ease-in-out 2s;
+}
+
+
+
+
+
+.bg_container .hexagon:nth-child(odd):hover {
+    transform: rotatez(180deg);
+    /* width: 92%; height: 80.5%; */
+}
+.bg_container .hexagon:nth-child(even):hover {
+    transform: rotatez(-180deg);
+}
+        
+
+.bg_container .col:nth-child(odd) {
+    margin-top: -2.5rem;
+}
+.bg_container .box:nth-child(odd):hover {
+    -webkit-animation: codd 2s ease-in-out 1s 1 ;
+            animation: codd 2s ease-in-out 1s 1 ;
+/*    box-shadow: 1000px 0px 500px 100px #ff0000 ;*/
+}
+.bg_container .box:nth-child(even):hover {
+    -webkit-animation: ceven 2s ease-in-out 1s 1;
+            animation: ceven 2s ease-in-out 1s 1;
+}
+
+/*--------------Odd*/
+@-webkit-keyframes codd {
+    
+    0%{
+        box-shadow: 0px 0px 300px 5px #ff0000;
+        box-shadow: -1000px 0px 500px 100px #0199da ;
+    }
+    10%{
+        box-shadow: -110px 0px 50px 1px #0199da ;
+    }
+    60%{
+        box-shadow: 0px 0px 2px 2px #ff64ee  ;
+        background-color: #88006e  ;
+    }
+    90%{
+        box-shadow: 500px 0px 200px 30px #ff0000;
+    }
+    100%{
+       
+    }
+}
+
+/*---------------Even*/
+@-webkit-keyframes ceven {
+    
+    0%{
+        box-shadow: 0px 0px 300px 0px #ff0000 ;
+        box-shadow: 1000px 0px 100px 0px #0199da ;
+    }
+    10%{
+        box-shadow: 110px 0px 50px 1px #0199da ;
+    }
+    60%{
+        box-shadow: 0px 0px 2px 2px #ff64ee ;
+        background-color: #88006e ;
+    }
+    80%{
+        box-shadow: -500px 0px 200px 30px #ff0000;
+    }
+
+    100%{
+        box-shadow: -600px 0px 200px 0px #ff0000;
+    }
+}
 }
 
     </style>
@@ -160,6 +248,76 @@ html {
     
 <!--    --------------------Hexagon-->
     <div class="bg_container">
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
+        <div class="col">
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+            <div class="box"><div class="hexagon"></div></div>
+        </div>
         <div class="col">
             <div class="box"><div class="hexagon"></div></div>
             <div class="box"><div class="hexagon"></div></div>

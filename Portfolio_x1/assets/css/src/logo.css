@@ -1,12 +1,14 @@
 /* line 4, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/logo.scss */
 .logo {
-  width: 12rem;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
+  width: 10rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: .5%;
 }
 
-/* line 10, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/logo.scss */
+/* line 8, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/logo.scss */
 .logo img {
   max-width: 100%;
 }

@@ -1,0 +1,64 @@
+/* line 4, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/social_icons.scss */
+.social_icons {
+  width: 18rem;
+  position: absolute;
+  bottom: 1rem;
+  right: .5rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 12, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/social_icons.scss */
+.social_icons a {
+  color: #adb7c3;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  line-height: 0;
+}
+
+/* line 19, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/social_icons.scss */
+.social_icons a .fab {
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.37);
+  color: #adb7c3;
+  transition: .2s ease-in-out;
+  -webkit-box-shadow: -2px 2px 8px 0.5px #000000;
+  -moz-box-shadow: -2px 2px 8px 0.5px #000000;
+  box-shadow: -2px 2px 8px 0.5px #000000;
+}
+
+/* line 28, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/social_icons.scss */
+.social_icons a .fa-google:hover {
+  color: #dd4b39;
+}
+
+/* line 31, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/social_icons.scss */
+.social_icons a .fa-facebook-f:hover {
+  color: #3B5998;
+}
+
+/* line 34, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/social_icons.scss */
+.social_icons a .fa-youtube:hover {
+  color: #bb0000;
+}
+
+/* line 37, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/social_icons.scss */
+.social_icons a .fa-github-alt:hover {
+  color: #6cc644;
+}
+
+/* line 40, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/social_icons.scss */
+.social_icons a .fa-linkedin-in:hover {
+  color: #007bb5;
+}
+
+/*# sourceMappingURL=../../css/src/social_icons.map */

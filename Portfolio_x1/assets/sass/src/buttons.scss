@@ -9,13 +9,13 @@
     cursor: pointer;
     position: absolute;
     right: 3%;
-    top: 3%;
+    top: 2rem; 
 
     .bars {
         @include size(95%,calc(100%/8));
         transition: 50ms ease-in-out;
-
-}
+        @include box-shadow (-4px 4px 3px 2px #000000);
+    }
     .barss {
         @include size(95%,calc(100%/8));
         transition: 50ms ease-in-out;
@@ -36,16 +36,15 @@
 }
 
 .btn_menu .barss:nth-child(1){
-    background-color: white;
+    background-color: #fff;
     transform: rotateZ(40deg);
-
+    z-index: -1;
     position: absolute;
     top: 50%;
 }
 .btn_menu .barss:nth-child(2){
     background-color: #cecece;
     transform: rotateZ(40deg);
-
     position: absolute;
 }
 .btn_menu .barss:nth-child(3){
@@ -55,7 +54,7 @@
     position: absolute;
 }
 .btn_menu .barss:nth-child(4){
-    background-color: white;
+    background-color: #fff;
     transform: rotateZ(-40deg);
     position: absolute;
     top: 50%;

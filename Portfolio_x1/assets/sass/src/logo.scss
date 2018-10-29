@@ -2,11 +2,9 @@
 @import "../helpers/mixins";
 
 .logo {
-    width: 12rem;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    
+    width: 10rem;
+    @include flex (row,center,center);
+    margin-left: .5%;
     img {
         max-width: 100%;
         

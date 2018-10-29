@@ -1,7 +1,11 @@
+@import url(src/fonts/fa/css/all.min.css);
 @import url(src/base.css);
 @import url(src/header.css);
+@import url(src/top_navbar.css);
+@import url(src/hero.css);
 @import url(src/buttons.css);
 @import url(src/logo.css);
-@import url(src/top_navbar.css);
+@import url(src/social_icons.css);
+@import url(src/sub-header_3d.css);
 
 /*# sourceMappingURL=../css/main.map */

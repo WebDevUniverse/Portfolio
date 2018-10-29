@@ -11,7 +11,7 @@
   cursor: pointer;
   position: absolute;
   right: 3%;
-  top: 3%;
+  top: 2rem;
 }
 
 /* line 14, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/buttons.scss */
@@ -19,6 +19,9 @@
   width: 95%;
   height: calc(100%/8);
   transition: 50ms ease-in-out;
+  -webkit-box-shadow: -4px 4px 3px 2px #000000;
+  -moz-box-shadow: -4px 4px 3px 2px #000000;
+  box-shadow: -4px 4px 3px 2px #000000;
 }
 
 /* line 19, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/buttons.scss */
@@ -50,8 +53,9 @@
 
 /* line 38, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/buttons.scss */
 .btn_menu .barss:nth-child(1) {
-  background-color: white;
+  background-color: #fff;
   transform: rotateZ(40deg);
+  z-index: -1;
   position: absolute;
   top: 50%;
 }
@@ -63,16 +67,16 @@
   position: absolute;
 }
 
-/* line 51, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/buttons.scss */
+/* line 50, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/buttons.scss */
 .btn_menu .barss:nth-child(3) {
   background-color: #cecece;
   transform: rotateZ(-40deg);
   position: absolute;
 }
 
-/* line 57, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/buttons.scss */
+/* line 56, G:/0.First/myProjects/Portfolio/Portfolio_x1/assets/sass/src/buttons.scss */
 .btn_menu .barss:nth-child(4) {
-  background-color: white;
+  background-color: #fff;
   transform: rotateZ(-40deg);
   position: absolute;
   top: 50%;

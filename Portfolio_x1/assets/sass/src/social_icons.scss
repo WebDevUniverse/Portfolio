@@ -1,0 +1,44 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+
+.social_icons {
+    width: 18rem;
+    position: absolute;
+    bottom: 1rem;
+    right: .5rem;
+    
+    @include flex (row, space-between, center);
+
+    a {
+        color: $social-icons-primary;
+        text-decoration: none;
+        cursor: pointer;
+        user-select: none;
+        line-height: 0;
+
+        .fab {
+            font-size: 1.5rem;
+            @include size (3rem , 3rem);
+            // @include round (100%);
+            @include flex (row, center, center);
+            @include color ($social-icons-secondary, $social-icons-primary);
+            transition: .2s ease-in-out;
+            @include box-shadow (-2px 2px 8px .5px #000000);
+        }
+        .fa-google:hover {
+            color: #dd4b39;
+        }
+        .fa-facebook-f:hover {
+            color: #3B5998;
+        }
+        .fa-youtube:hover {
+            color: #bb0000;
+        }
+        .fa-github-alt:hover {
+            color: #6cc644;
+        }
+        .fa-linkedin-in:hover {
+            color: #007bb5;
+        }
+    }
+}
